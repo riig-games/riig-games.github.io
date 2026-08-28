@@ -7,7 +7,10 @@
   <meta name="description" content="Idle Plant Incremental — jeu mobile idle/incremental sur les plantes et leur cycle de vie, par RIIG." />
   <link rel="stylesheet" href="../../assets/style.css" />
 </head>
-<body>
+<body
+  data-title-fr="Idle Plant Incremental — RIIG"
+  data-title-en="Idle Plant Incremental — RIIG"
+>
   <div class="wrap">
     <header class="site-header">
       <img class="logo" src="../../assets/riig-logo.png" alt="Logo RIIG" />
@@ -17,44 +20,89 @@
       </div>
     </header>
 
-    <a class="back-link" href="../../">&larr; Retour à RIIG</a>
+    <div class="lang-switch" role="group" aria-label="Langue / Language">
+      <button type="button" class="lang-btn" data-lang="fr">FR</button>
+      <button type="button" class="lang-btn" data-lang="en">EN</button>
+    </div>
 
-    <div class="game-hero">
-      <img class="icon" src="../../assets/idle-plant-incremental-icon.png" alt="" />
-      <div>
-        <h1 style="margin-bottom: 4px;">Idle Plant Incremental</h1>
-        <span class="badge">En test — pas encore publié</span>
+    <div data-lang-content="fr">
+      <a class="back-link" href="../../">&larr; Retour à RIIG</a>
+
+      <div class="game-hero">
+        <img class="icon" src="../../assets/idle-plant-incremental-icon.png" alt="" />
+        <div>
+          <h1 style="margin-bottom: 4px;">Idle Plant Incremental</h1>
+          <span class="badge">En test — pas encore publié</span>
+        </div>
       </div>
+
+      <p class="lead">
+        Un jeu mobile idle/incremental sur le thème des plantes, de leur cycle de vie et de la faune
+        qui les accompagne. Plante une graine, laisse-la pousser, récolte, composte, débloque de
+        nouvelles espèces et améliore ton jardin — qui continue de vivre même quand tu n'es pas là.
+      </p>
+
+      <div class="links-row">
+        <span class="disabled-item">📱 Google Play — bientôt disponible</span>
+        <a href="privacy.html">🔒 Politique de confidentialité</a>
+      </div>
+
+      <h2>À propos du jeu</h2>
+      <p>
+        Android uniquement, disponible en français et en anglais. Le jeu combine une boucle de
+        récolte/compostage, un jardin sauvage, plusieurs couches de prestige (Symbiose, Faune,
+        Écosystème), et de la publicité optionnelle vidéo récompensée pour des bonus temporaires.
+      </p>
+      <ul>
+        <li><strong>Éditeur :</strong> RIIG (Ralden Idle Incremental Games)</li>
+        <li><strong>Plateforme :</strong> Android</li>
+        <li><strong>Identifiant d'application :</strong> <code>com.riiggames.idleplantincremental</code></li>
+        <li><strong>Prix :</strong> Gratuit, avec publicités optionnelles et achats intégrés facultatifs</li>
+      </ul>
     </div>
 
-    <p class="lead">
-      Un jeu mobile idle/incremental sur le thème des plantes, de leur cycle de vie et de la faune
-      qui les accompagne. Plante une graine, laisse-la pousser, récolte, composte, débloque de
-      nouvelles espèces et améliore ton jardin — qui continue de vivre même quand tu n'es pas là.
-    </p>
+    <div data-lang-content="en" hidden>
+      <a class="back-link" href="../../">&larr; Back to RIIG</a>
 
-    <div class="links-row">
-      <span class="disabled-item">📱 Google Play — bientôt disponible</span>
-      <a href="privacy.html">🔒 Politique de confidentialité</a>
+      <div class="game-hero">
+        <img class="icon" src="../../assets/idle-plant-incremental-icon.png" alt="" />
+        <div>
+          <h1 style="margin-bottom: 4px;">Idle Plant Incremental</h1>
+          <span class="badge">In testing — not yet published</span>
+        </div>
+      </div>
+
+      <p class="lead">
+        A mobile idle/incremental game about plants, their life cycle, and the wildlife that comes
+        with them. Plant a seed, let it grow, harvest it, compost the leftovers, unlock new species,
+        and grow a garden that keeps living even when you're not there.
+      </p>
+
+      <div class="links-row">
+        <span class="disabled-item">📱 Google Play — coming soon</span>
+        <a href="privacy.html">🔒 Privacy Policy</a>
+      </div>
+
+      <h2>About the game</h2>
+      <p>
+        Android only, available in French and English. The game combines a harvest/composting loop,
+        a wild garden, several layers of prestige (Symbiosis, Wildlife, Ecosystem), and optional
+        rewarded video ads for temporary bonuses.
+      </p>
+      <ul>
+        <li><strong>Publisher:</strong> RIIG (Ralden Idle Incremental Games)</li>
+        <li><strong>Platform:</strong> Android</li>
+        <li><strong>App ID:</strong> <code>com.riiggames.idleplantincremental</code></li>
+        <li><strong>Price:</strong> Free, with optional ads and optional in-app purchases</li>
+      </ul>
     </div>
-
-    <h2>À propos du jeu</h2>
-    <p>
-      Android uniquement, entièrement en français. Le jeu combine une boucle de récolte/compostage,
-      un jardin sauvage, plusieurs couches de prestige (Symbiose, Faune, Écosystème), et de la
-      publicité optionnelle vidéo récompensée pour des bonus temporaires.
-    </p>
-    <ul>
-      <li><strong>Éditeur :</strong> RIIG (Ralden Idle Incremental Games)</li>
-      <li><strong>Plateforme :</strong> Android</li>
-      <li><strong>Identifiant d'application :</strong> <code>com.riiggames.idleplantincremental</code></li>
-      <li><strong>Prix :</strong> Gratuit, avec publicités optionnelles et achats intégrés facultatifs</li>
-    </ul>
 
     <footer class="site-footer">
       <span>© 2026 RIIG — Ralden Idle Incremental Games</span>
       <a href="mailto:raphael.decaudin.dev@gmail.com">raphael.decaudin.dev@gmail.com</a>
     </footer>
   </div>
+
+  <script src="../../assets/lang.js"></script>
 </body>
 </html>

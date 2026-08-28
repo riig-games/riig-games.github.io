@@ -7,7 +7,10 @@
   <meta name="description" content="Politique de confidentialité du jeu Idle Plant Incremental, édité par RIIG." />
   <link rel="stylesheet" href="../../assets/style.css" />
 </head>
-<body>
+<body
+  data-title-fr="Politique de confidentialité — Idle Plant Incremental"
+  data-title-en="Privacy Policy — Idle Plant Incremental"
+>
   <div class="wrap">
     <header class="site-header">
       <img class="logo" src="../../assets/riig-logo.png" alt="Logo RIIG" />
@@ -225,57 +228,6 @@
     </footer>
   </div>
 
-  <script>
-    (function () {
-      var STORAGE_KEY = 'riig-privacy-lang';
-      var SUPPORTED = ['fr', 'en'];
-      var TITLES = {
-        fr: 'Politique de confidentialité — Idle Plant Incremental',
-        en: 'Privacy Policy — Idle Plant Incremental',
-      };
-
-      var stored = null;
-      try {
-        stored = localStorage.getItem(STORAGE_KEY);
-      } catch (e) {
-        /* localStorage indisponible (navigation privée...) — repli sur la détection navigateur. */
-      }
-
-      var initial =
-        SUPPORTED.indexOf(stored) !== -1
-          ? stored
-          : (navigator.language || '').toLowerCase().indexOf('fr') === 0
-            ? 'fr'
-            : 'en';
-
-      function apply(lang) {
-        document.documentElement.lang = lang;
-        document.title = TITLES[lang];
-        var blocks = document.querySelectorAll('[data-lang-content]');
-        for (var i = 0; i < blocks.length; i++) {
-          blocks[i].hidden = blocks[i].getAttribute('data-lang-content') !== lang;
-        }
-        var buttons = document.querySelectorAll('.lang-btn');
-        for (var j = 0; j < buttons.length; j++) {
-          buttons[j].setAttribute('aria-pressed', String(buttons[j].getAttribute('data-lang') === lang));
-        }
-      }
-
-      var buttons = document.querySelectorAll('.lang-btn');
-      for (var k = 0; k < buttons.length; k++) {
-        buttons[k].addEventListener('click', function (event) {
-          var lang = event.currentTarget.getAttribute('data-lang');
-          try {
-            localStorage.setItem(STORAGE_KEY, lang);
-          } catch (e) {
-            /* rien à faire si le stockage est indisponible — le choix ne survit juste pas au rechargement */
-          }
-          apply(lang);
-        });
-      }
-
-      apply(initial);
-    })();
-  </script>
+  <script src="../../assets/lang.js"></script>
 </body>
 </html>
