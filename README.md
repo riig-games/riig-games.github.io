@@ -19,6 +19,11 @@ games/<slug>/privacy.html               Politique de confidentialité du jeu <sl
 
 1. Créer `games/<slug>/` avec `index.html` (fiche) et `privacy.html` (politique de
    confidentialité), en copiant la structure de `games/idle-plant-incremental/`.
+   `privacy.html` est bilingue FR/EN (deux blocs `[data-lang-content]` + un petit
+   script de bascule, voir ce fichier pour le pattern à reprendre tel quel) — les
+   deux blocs doivent rester des traductions fidèles l'un de l'autre, contrairement
+   au contenu de lore du jeu (Codex) qui, lui, peut être réécrit pour un public
+   anglophone.
 2. Ajouter une icône dans `assets/` et une carte `.card-link` vers `games/<slug>/`
    dans `index.html`.
 3. Une fois l'app publiée sur le Play Store, remplacer le lien "bientôt disponible"

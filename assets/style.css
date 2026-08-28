@@ -286,3 +286,42 @@ footer.site-footer a {
 address {
   font-style: normal;
 }
+
+/* Sélecteur de langue FR/EN — pas de drapeaux (une langue n'est pas un pays), même convention que
+   le sélecteur en jeu. Réutilisable par toute future page bilingue du site. */
+.lang-switch {
+  display: inline-flex;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 3px;
+  gap: 2px;
+  margin-bottom: 22px;
+}
+
+.lang-btn {
+  appearance: none;
+  border: none;
+  background: transparent;
+  color: var(--text-dim);
+  font-family: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  padding: 5px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.lang-btn:hover,
+.lang-btn:focus-visible {
+  color: var(--text);
+}
+
+.lang-btn[aria-pressed='true'] {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+[data-lang-content][hidden] {
+  display: none;
+}
