@@ -287,40 +287,48 @@ address {
   font-style: normal;
 }
 
-/* Sélecteur de langue FR/EN, en drapeaux — réutilisable par toute future page bilingue du site. */
+/* Sélecteur de langue FR/EN — un petit globe 🌐 devant précise que c'est bien un
+   sélecteur de LANGUE (retour utilisateur explicite : les seules initiales "FR"/"EN"
+   sans rien autour ne le rendaient pas assez clair). Réutilisable par toute future
+   page bilingue du site. */
 .lang-switch {
   display: inline-flex;
+  align-items: center;
+  gap: 6px;
   border: 1px solid var(--border);
   border-radius: 999px;
-  padding: 3px;
-  gap: 2px;
+  padding: 3px 3px 3px 10px;
   margin-bottom: 22px;
+}
+
+.lang-switch-icon {
+  font-size: 0.9rem;
+  line-height: 1;
+  color: var(--text-dim);
 }
 
 .lang-btn {
   appearance: none;
   border: none;
   background: transparent;
+  color: var(--text-dim);
   font-family: inherit;
-  font-size: 1.15rem;
-  line-height: 1;
-  padding: 6px 10px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  padding: 5px 14px;
   border-radius: 999px;
   cursor: pointer;
-  opacity: 0.55;
-  filter: grayscale(60%);
-  transition: opacity 0.15s ease, filter 0.15s ease;
 }
 
 .lang-btn:hover,
 .lang-btn:focus-visible {
-  opacity: 0.8;
+  color: var(--text);
 }
 
 .lang-btn[aria-pressed='true'] {
   background: var(--accent-soft);
-  opacity: 1;
-  filter: none;
+  color: var(--accent);
 }
 
 [data-lang-content][hidden] {
