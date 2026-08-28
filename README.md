@@ -20,9 +20,9 @@ games/<slug>/privacy.html               Politique de confidentialité du jeu <sl
 
 ## Pages bilingues
 
-Chaque page affiche un petit sélecteur "FR"/"EN" en haut (`.lang-switch`/`.lang-btn`
-dans `style.css`, pas de drapeaux — même convention que le sélecteur en jeu). Le
-contenu de la page est dupliqué dans deux blocs `<div data-lang-content="fr">…</div>`
+Chaque page affiche un petit sélecteur de drapeaux 🇫🇷/🇬🇧 en haut (`.lang-switch`/
+`.lang-btn` dans `style.css`, `aria-label="Français"`/`"English"` pour
+l'accessibilité). Le contenu de la page est dupliqué dans deux blocs `<div data-lang-content="fr">…</div>`
 et `<div data-lang-content="en" hidden>…</div>`, et `assets/lang.js` (chargé en bas de
 chaque page, `<script src=".../assets/lang.js"></script>`) bascule lequel des deux est
 visible. Détecte la langue du navigateur par défaut (repli anglais), mémorise le choix
