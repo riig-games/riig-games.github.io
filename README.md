@@ -11,6 +11,7 @@ politique de confidentialité) — voir "Pages bilingues" ci-dessous.
 
 ```
 index.html                              Page d'accueil RIIG (liste des jeux)
+privacy.html                            Politique de confidentialité du STUDIO (tous les jeux)
 assets/style.css                        Feuille de style partagée par toutes les pages
 assets/lang.js                          Sélecteur de langue FR/EN partagé par toutes les pages
 assets/riig-logo.png                    Logo RIIG (repris de idle-plant-incremental/src/assets)
@@ -44,7 +45,11 @@ Les deux blocs doivent rester des **traductions fidèles** l'un de l'autre pour 
    bilingues" ci-dessus) de `games/idle-plant-incremental/`.
 2. Ajouter une icône dans `assets/` et une carte `.card-link` vers `games/<slug>/`
    dans `index.html` (les deux blocs `data-lang-content`).
-3. Une fois l'app publiée sur le Play Store, remplacer le lien "bientôt disponible"
+3. Ajouter le jeu à la section "Politique détaillée de chaque jeu" de `privacy.html`
+   (les deux blocs `data-lang-content`), et mettre à jour sa date. Cette page studio est
+   celle liée dans l'écran de consentement OAuth du projet Google Cloud `riig-games`,
+   commun à tous les jeux : son URL ne doit jamais changer.
+4. Une fois l'app publiée sur le Play Store, remplacer le lien "bientôt disponible"
    de la fiche du jeu par le vrai lien Play Store, et lier cette page de politique de
    confidentialité + la fiche depuis le Play Console (App content → Privacy Policy).
 
